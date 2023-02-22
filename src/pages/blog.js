@@ -15,6 +15,18 @@ export const query = graphql`
         name
       }
     }
+    allMdx(sort: {frontmatter: {datePublished: DESC}}) {
+      nodes {
+        frontmatter {
+          name
+          postTitle
+          slug
+          datePublished(formatString: "MMMM DD, YYYY")
+        }
+        excerpt
+        id
+      }
+    }
   }
 `;
 
@@ -32,6 +44,19 @@ const BlogPage = ({ data }) => {
           <li key={node.name}>{node.name}</li>
         ))}
       </ul>
+
+      <p>try using the article html element</p>
+
+      {
+        data.allMdx.nodes.map((node) => (
+          <article key={node.id}>
+            <h2>{node.frontmatter.postTitle}</h2>
+            <p>Posted: {node.frontmatter.datePublished}</p>
+            <p>{node.excerpt}</p>
+            
+          </article>
+        ))
+      }
     </Layout>
   );
 };
