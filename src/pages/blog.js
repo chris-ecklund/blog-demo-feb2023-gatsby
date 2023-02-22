@@ -1,7 +1,7 @@
-import * as React from 'react'
-import { graphql } from 'gatsby'
-import Layout from '../components/layout'
-import Seo from '../components/seo'
+import * as React from "react";
+import { graphql } from "gatsby";
+import Layout from "../components/layout";
+import Seo from "../components/seo";
 
 export const query = graphql`
   query {
@@ -16,21 +16,26 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 
-//console.log("the query returns: ", {data.siteMetadata});
-
-const BlogPage = (data) => {
-
-  console.log("the query returns: ", {data});
+const BlogPage = ({ data }) => {
+  //console.log("the query returns: ", {data.allFile.nodes});
 
   return (
     <Layout pageTitle="My Blog Posts">
       <p>My cool posts will go in here</p>
+
+      <p>new query node names below</p>
+
+      <ul>
+        {data.allFile.nodes.map((node) => (
+          <li key={node.name}>{node.name}</li>
+        ))}
+      </ul>
     </Layout>
-  )
-}
+  );
+};
 
-export const Head = () => <Seo title="My Blog Posts" />
+export const Head = () => <Seo title="My Blog Posts" />;
 
-export default BlogPage
+export default BlogPage;
