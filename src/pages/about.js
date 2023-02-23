@@ -3,6 +3,7 @@ import * as React from "react";
 import Layout from "../components/layout";
 import Seo from '../components/seo'
 
+import '../scss/styles.scss';
 
 // Step 2: Define your component
 const AboutPage = (data) => {
