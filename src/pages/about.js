@@ -10,10 +10,10 @@ const AboutPage = (data) => {
 
   return (
     
-    <Layout pageTitle="About Me">
+    <Layout pageTitle="About Me" >
       
-      <h1>About Me</h1>
-      <p>
+      <h1 className='red-find-border'>About Me</h1>
+      <p className='red-find-border'>
         Hi there! I'm the proud creator of this site, which I built with Gatsby.
       </p>
     </Layout>
