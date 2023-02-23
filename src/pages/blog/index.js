@@ -23,17 +23,19 @@ export const query = graphql`
 const BlogPage = ({ data }) => {
   return (
     <Layout pageTitle="My Blog Posts">
-      {data.allMdx.nodes.map((node) => (
-        <article key={node.id}>
-          <h2>
-            <Link to={`/blog/${node.frontmatter.slug}`}>
-              {node.frontmatter.title}
-            </Link>
-          </h2>
-          <p>Posted: {node.frontmatter.date}</p>
-          <p>{node.excerpt}</p>
-        </article>
-      ))}
+      {
+        data.allMdx.nodes.map((node) => (
+          <article key={node.id}>
+            <h2>
+              <Link to={`/blog/${node.frontmatter.slug}`}>
+                {node.frontmatter.postTitle}
+              </Link>
+            </h2>
+            <p>Posted: {node.frontmatter.datePublished}</p>
+            {/* <p>{node.excerpt}</p> */}
+          </article>
+        ))
+      }
     </Layout>
   );
 };
