@@ -2,22 +2,11 @@
 import * as React from "react";
 import Layout from "../components/layout";
 import Seo from '../components/seo'
-import { graphql } from "gatsby";
 
-export const query = graphql`
-  query ($id: String) {
-    mdx(id: {eq: $id}) {
-      frontmatter {
-        postTitle
-        datePublished(formatString: "MMMM D, YYYY")
-      }
-    }
-  }
-`
 
 // Step 2: Define your component
 const AboutPage = (data) => {
-  console.log("hi2", data);
+
   return (
     
     <Layout pageTitle="About Me">
