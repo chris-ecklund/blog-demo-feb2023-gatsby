@@ -65,6 +65,3 @@ export const Head = () => <Seo title="My Blog Posts" />;
 
 export default BlogPage;
 
-//friday, pick up here
-//1. Start by using GraphiQL to create a page query for your blog post page template
-// 3/4 way down the part6 page
