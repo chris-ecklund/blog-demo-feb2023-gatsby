@@ -26,3 +26,7 @@ export const Head = () => <Seo title="About Me" />
 
 // Step 3: Export your component
 export default AboutPage;
+
+//---------
+//this is link for deployed site as of 3:20 PM 2/23/2023
+//https://build-f442016f-f9c1-4aaa-8dbc-bccdd8965742.gatsbyjs.io/
