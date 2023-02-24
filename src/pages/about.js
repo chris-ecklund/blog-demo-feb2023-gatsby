@@ -12,7 +12,7 @@ const AboutPage = (data) => {
     
     <Layout pageTitle="About Me" >
       
-      <h1 className='red-find-border'>About Me</h1>
+      <h1 className='red-find-border red-text'>About Me</h1>
       <p className='red-find-border'>
         Hi there! I'm the proud creator of this site, which I built with Gatsby.
       </p>

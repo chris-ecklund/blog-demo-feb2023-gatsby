@@ -3,6 +3,8 @@ import Layout from "../components/layout";
 import { StaticImage } from 'gatsby-plugin-image'
 import Seo from '../components/seo'
 
+import '../scss/styles.scss';
+
 const pageStyles = {
   color: "#232129",
   padding: 96,
@@ -84,7 +86,7 @@ const badgeStyle = {
 const IndexPage = () => {
   return (
     <Layout pageTitle="Home Page">
-      <h1>Welcome to my Gatsby site!</h1>
+      <h1 className='red-text'>Welcome to my Gatsby site!</h1>
       <p>I'm making this by following the Gatsby Tutorial.</p>
       
       <p>cloud</p>

@@ -1,11 +1,48 @@
-//@import url(https://fonts.googleapis.com/css?family=Impact&amp;display=swap);
+@import url(https://fonts.googleapis.com/css?family=Impact&amp;display=swap);
 
-p {
-  color: red;
+//--------------------------------------------------
+//Variables
+
+$blog-blue: #388888 !default;
+$blog-grey: #d4d4d4 !default;
+$blog-charcoal: #36454F !default;
+$blog-cola: #3c3024 !default;
+$blog-shaddow: rgb(20, 20, 20) !default;
+
+//--------------------------------------------------
+//heading and site title
+
+.heading {
+  color: rebeccapurple;
 }
 
-.red-find-border {
-  border: 2px solid red;
+.site-title {
+  font-size: 3rem;
+  color: white;
+  font-weight: 700;
+  margin: 3rem 0;
+  text-shadow: 1px 1px 5px $blog-shaddow;
+}
+
+//--------------------------------------------------
+//Nav
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  flex-wrap: wrap;
+  justify-content: end;
+  align-content: center;
+}
+
+.nav-link-item {
+  padding-right: 2rem;
+}
+
+.nav-link-text {
+  color: black;
+  font-size: 1.5rem;
 }
 
 //--------------------------------------------------
@@ -15,8 +52,13 @@ p {
 //Wrapper
 
 .wrapper-fullpagesize-nopadding {
-  height: 100%;
+  height: 100vh;
   width: 100%;
+}
+
+.wrapper-addpadding {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .wrapper-pagewidth {
@@ -24,6 +66,9 @@ p {
   margin: 0 auto;
 }
 
+.site-default-font {
+  font-family: sans-serif;
+}
 
 //--------------------------------------------------
 //Containers
@@ -63,21 +108,40 @@ p {
 }
 
 //--------------------------------------------------
+//borders
+
+.red-find-border {
+  border: 2px solid red;
+}
+
+//--------------------------------------------------
 //Fonts
 
-// .font-impact {
-//   font-family: 'Impact';
-// }
+.font-impact {
+  font-family: "Impact";
+}
 
 //--------------------------------------------------
-//Text Shaddows
+//Text styles
 
-// .wht-shadow {
-//   text-shadow: 0px 0px 5px white;
-// }
+.wht-shadow {
+  text-shadow: 0px 0px 5px white;
+}
+
+.red-text {
+  color: red;
+}
 
 //--------------------------------------------------
+//other custom sections
 
-//--------------------------------------------------
+.background {
+  background-color: $blog-grey;
+}
 
-//--------------------------------------------------
+.center-column {
+  background-color: $blog-blue;
+  padding: 50px;
+  border-radius: 50px;
+  box-shadow: 5px 5px 5px $blog-shaddow;
+}
