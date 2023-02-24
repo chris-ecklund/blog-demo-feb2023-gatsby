@@ -25,7 +25,7 @@ const BlogPage = ({ data }) => {
     <Layout pageTitle="My Blog Posts">
       {
         data.allMdx.nodes.map((node) => (
-          <article key={node.id}>
+          <article key={node.id} className='card'>
             <h2>
               <Link to={`/blog/${node.frontmatter.slug}`}>
                 {node.frontmatter.postTitle}

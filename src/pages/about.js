@@ -1,30 +1,25 @@
-// Step 1: Import React
 import * as React from "react";
 import Layout from "../components/layout";
-import Seo from '../components/seo'
+import Seo from "../components/seo";
 
-import '../scss/styles.scss';
+import "../scss/styles.scss";
 
-// Step 2: Define your component
 const AboutPage = (data) => {
-
   return (
-    
-    <Layout pageTitle="About Me" >
-      
-      <h1 className='red-find-border red-text'>About Me</h1>
-      <p className='red-find-border'>
-        Hi there! I'm the proud creator of this site, which I built with Gatsby.
+    <Layout pageTitle="About Me">
+      {/* <h2 className="red-find-border">About Me</h2> */}
+      <p className=''>
+        I am a resident of Orlando, Florida. There is a lot to see and do; check out the blog posts!
+      </p>
+      <p>
+        Thank you for visiting the site!
       </p>
     </Layout>
   );
 };
 
-// Step 4
-//export const Head = () => <title>About Me</title>;
-export const Head = () => <Seo title="About Me" />
+export const Head = () => <Seo title="About Me" />;
 
-// Step 3: Export your component
 export default AboutPage;
 
 //---------

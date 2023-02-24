@@ -49,7 +49,7 @@ const BlogPost = ({ data, children }) => {
     <Layout pageTitle={data.mdx.frontmatter.postTitle}>
       <p>{data.mdx.frontmatter.datePublished}</p>
 
-      <GatsbyImage image={image} alt={data.mdx.frontmatter.hero_image_alt} />
+      <GatsbyImage image={image} alt={data.mdx.frontmatter.hero_image_alt} className='image-radius'/>
       <p>
         Photo Credit:{" "}
         <a href={data.mdx.frontmatter.hero_image_credit_link}>

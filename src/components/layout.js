@@ -35,7 +35,7 @@ const Layout = ({ pageTitle, children }) => {
             </li>
             <li className='nav-link-item'>
               <Link to="/about" className='nav-link-text'>
-                About
+                About Me
               </Link>
             </li>
             <li className='nav-link-item'>
@@ -46,7 +46,7 @@ const Layout = ({ pageTitle, children }) => {
           </ul>
         </nav>
         <main>
-          <h1 className={heading}>{pageTitle}</h1>
+          <h1 className='heading'>{pageTitle}</h1>
           {children}
         </main>
       </div>
