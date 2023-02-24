@@ -1,3 +1,5 @@
+//@import url(https://fonts.googleapis.com/css?family=Impact&amp;display=swap);
+
 p {
   color: red;
 }
@@ -10,27 +12,72 @@ p {
 //Heights & Widths
 
 //--------------------------------------------------
+//Wrapper
+
+.wrapper-fullpagesize-nopadding {
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper-pagewidth {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+
+//--------------------------------------------------
 //Containers
 
 .container-general-row {
-  display: flex; 
+  display: flex;
 }
 
 .container-general-col {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
+}
+
+.container-bottom-center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-end;
+}
+
+.flexcontainer-center-leftright {
+  display: flex;
+  flex-direction: row; //this is default
+  //flex-wrap: no-wrap; //this is default
+  justify-content: center;
+}
+
+.flexcontainer-center-center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.text-align-center {
+  text-align: center;
 }
 
 //--------------------------------------------------
+//Fonts
 
+// .font-impact {
+//   font-family: 'Impact';
+// }
+
+//--------------------------------------------------
+//Text Shaddows
+
+// .wht-shadow {
+//   text-shadow: 0px 0px 5px white;
+// }
 
 //--------------------------------------------------
 
-
 //--------------------------------------------------
-
-
-//--------------------------------------------------
-
 
 //--------------------------------------------------
