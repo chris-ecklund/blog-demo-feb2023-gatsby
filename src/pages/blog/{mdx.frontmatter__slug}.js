@@ -12,7 +12,14 @@ export const query = graphql`
         postTitle
         slug
         datePublished(formatString: "MMMM D, YYYY")
-        
+        hero_image_alt
+        hero_image_credit_link
+        hero_image_credit_text
+        hero_image {
+          childImageSharp {
+            gatsbyImageData
+          }
+        }
       }
     }
   }
@@ -37,18 +44,18 @@ export const query = graphql`
 // }
 
 const BlogPost = ({ data, children }) => {
-  //const image = getImage(data.mdx.frontmatter.hero_image);
+  const image = getImage(data.mdx.frontmatter.hero_image); //Without the getImage helper function, you’d have to type out data.mdx.frontmatter.hero_image.childImageSharp.gatsbyImageData (which is longer, but gives you back the same data).
   return (
     <Layout pageTitle={data.mdx.frontmatter.postTitle}>
       <p>{data.mdx.frontmatter.datePublished}</p>
 
-      {/* <GatsbyImage image={image} alt={data.mdx.frontmatter.hero_image_alt} />
+      <GatsbyImage image={image} alt={data.mdx.frontmatter.hero_image_alt} />
       <p>
         Photo Credit:{" "}
         <a href={data.mdx.frontmatter.hero_image_credit_link}>
           {data.mdx.frontmatter.hero_image_credit_text}
         </a>
-      </p> */}
+      </p>
 
       {children}
     </Layout>
