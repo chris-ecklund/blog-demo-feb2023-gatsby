@@ -27,3 +27,9 @@ export default AboutPage;
 //---------
 //this is link for deployed site as of 3:20 PM 2/23/2023
 //https://build-f442016f-f9c1-4aaa-8dbc-bccdd8965742.gatsbyjs.io/
+
+//this is link for deployed site as of 10:48 AM 2/24/2023
+//https://build-04c88f1c-ddd5-42ad-8fbc-cb87103d30e6.gatsbyjs.io/
+
+//site URL
+//https://blogdemofeb2023gatsby.gatsbyjs.io/
