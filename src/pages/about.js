@@ -1,5 +1,6 @@
 import * as React from "react";
 import Layout from "../components/layout";
+import { StaticImage } from "gatsby-plugin-image";
 import Seo from "../components/seo";
 
 import "../scss/styles.scss";
@@ -8,6 +9,7 @@ const AboutPage = (data) => {
   return (
     <Layout pageTitle="About Me">
       {/* <h2 className="red-find-border">About Me</h2> */}
+      <StaticImage alt="silhouette" src="../images/man-walking-silhouette-clipart.jpg" className='image-radius '/>
       <p className=''>
         I am a resident of Orlando, Florida. There is a lot to see and do; check out the blog posts!
       </p>

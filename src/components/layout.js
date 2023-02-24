@@ -1,13 +1,13 @@
 import * as React from "react";
 import { Link, useStaticQuery, graphql } from "gatsby";
-import {
-  container,
-  heading,
-  navLinks,
-  navLinkItem,
-  navLinkText,
-  siteTitle,
-} from "./layout.module.css";
+// import {
+//   container,
+//   heading,
+//   navLinks,
+//   navLinkItem,
+//   navLinkText,
+//   siteTitle,
+// } from "./layout.module.css";
 
 import "../scss/styles.scss";
 
